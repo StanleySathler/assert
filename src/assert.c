@@ -13,7 +13,7 @@ assert_int(const int expected, const int actual, const char* message)
     printf(RED_TEXT);
     printf("[FAIL] %s \n", message);
     printf("* Expected: int %d \n", expected);
-    printf("* Actual: char %d \n", actual);
+    printf("* Actual: int %d \n", actual);
     printf(DEFAULT_TEXT);
   }
   else
