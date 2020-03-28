@@ -1,2 +1,5 @@
 # IDE & Editor files
 .vscode
+
+# Object files
+*.o
