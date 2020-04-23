@@ -25,6 +25,28 @@ assert_int(const int expected, const int actual, const char* message)
 }
 
 /**
+ * @brief Assert two doubles.
+ */
+void
+assert_double(const double expected, const double actual, const char* message)
+{
+  if (expected != actual)
+  {
+    printf(RED_TEXT);
+    printf("[FAIL] %s \n", message);
+    printf("* Expected: double %f \n", expected);
+    printf("* Actual: double %f \n", actual);
+    printf(DEFAULT_TEXT);
+  }
+  else
+  {
+    printf(GREEN_TEXT);
+    printf("[SUCCESS] %s \n", message);
+    printf(DEFAULT_TEXT);
+  }
+}
+
+/**
  * @brief Assert two chars.
  */
 void

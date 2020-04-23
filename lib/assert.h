@@ -12,6 +12,12 @@
   assert_int(const int expected, const int actual, const char* message);
 
   /**
+   * @brief Assert two doubles.
+   */
+  void
+  assert_double(const double expected, const double actual, const char* message);
+
+  /**
    * @brief Assert two chars.
    */
   void
